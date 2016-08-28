@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="fill_parent"
+        p1:layout_height="fill_parent"
+        p1:id="@+id/linearLayout1">
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="fill_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayoutModel">
+            <TextView
+                p1:text="Table"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView1"
+                p1:layout_marginBottom="8dp"
+                p1:layout_marginTop="8.0dp"
+                p1:layout_marginLeft="6.0dp" />
+            <TableLayout
+                p1:layout_width="match_parent"
+                p1:layout_height="match_parent"
+                p1:layout_marginTop="10dp">
+                <TableRow
+                    p1:padding="5dp">
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="1"
+                        p1:text="Sensor" />
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="1"
+                        p1:text="Value" />
+                </TableRow>
+                <TableRow
+                    p1:padding="5dp">
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="1"
+                        p1:id="@+id/txts1" />
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="1"
+                        p1:id="@+id/txtv1" />
+                </TableRow>
+                <TableRow
+                    p1:padding="5dp">
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="2"
+                        p1:id="@+id/txts2" />
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="2"
+                        p1:id="@+id/txtv2" />
+                </TableRow>
+                <TableRow
+                    p1:padding="5dp">
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="3"
+                        p1:id="@+id/txts3" />
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="2"
+                        p1:id="@+id/txtv3" />
+                </TableRow>
+                <TableRow
+                    p1:padding="5dp">
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="4"
+                        p1:id="@+id/txts4" />
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="4"
+                        p1:id="@+id/txtv4" />
+                </TableRow>
+                <TableRow
+                    p1:padding="5dp">
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="5"
+                        p1:id="@+id/txts5" />
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="5"
+                        p1:id="@+id/txtv5" />
+                </TableRow>
+                <TableRow
+                    p1:padding="5dp">
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="6"
+                        p1:id="@+id/txts6" />
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="6"
+                        p1:id="@+id/txtv6" />
+                </TableRow>
+                <TableRow
+                    p1:padding="5dp">
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="7"
+                        p1:id="@+id/txts7" />
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="7"
+                        p1:id="@+id/txtv7" />
+                </TableRow>
+                <TableRow
+                    p1:padding="5dp">
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="8"
+                        p1:id="@+id/txts8" />
+                    <TextView
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_weight="0.8"
+                        p1:text="8"
+                        p1:id="@+id/txtv8" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                p1:text="Graph"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView2"
+                p1:layout_marginBottom="8dp"
+                p1:layout_marginTop="8dp"
+                p1:layout_marginLeft="6dp" />
+            <LinearLayout
+                p1:orientation="horizontal"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/linearLayout2"
+                p1:gravity="center_horizontal">
+                <RadioButton
+                    p1:text="1"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/rdo1" />
+                <RadioButton
+                    p1:text="2"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/rdo2" />
+                <RadioButton
+                    p1:text="3"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/rdo3" />
+                <RadioButton
+                    p1:text="4"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/rdo4" />
+                <RadioButton
+                    p1:text="5"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/rdo5" />
+                <RadioButton
+                    p1:text="6"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/rdo6" />
+                <RadioButton
+                    p1:text="7"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/rdo7" />
+                <RadioButton
+                    p1:text="8"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/rdo8" />
+            </LinearLayout>
+        </LinearLayout>
+        <OxyPlot.Xamarin.Android.PlotView
+            p1:id="@+id/plotview1"
+            p1:layout_width="fill_parent"
+            p1:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

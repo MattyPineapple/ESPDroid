@@ -9,17 +9,22 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.Threading;
 
 namespace ESPDroid
 {
-    [Activity(Label = "MainActivity", MainLauncher = false)]
-    public class MainActivity : Activity
+    [Activity(Label = "ESPDroid", Theme = "@style/Theme.Splash", MainLauncher = true, NoHistory = true)]
+    public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+            Thread.Sleep(3000);
+
+            StartActivity(typeof(TabActivity));
+
+            
         }
     }
 }

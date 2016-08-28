@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout1">
+        <TextView
+            p1:text="About"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/txtAboutTitle" />
+        <TextView
+            p1:text=""
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:gravity="center"
+            p1:id="@+id/txtAboutText" />
+        <TextView
+            p1:text="Help"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/txtHelpTitle" />
+        <TextView
+            p1:text=""
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:gravity="center"
+            p1:id="@+id/txtHelpText" />
+        <TextView
+            p1:text="Credits"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/txtCreditsTitle" />
+        <TextView
+            p1:text=""
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:gravity="center"
+            p1:id="@+id/txtCreditsText" />
+        <TextView
+            p1:text="Special Thanks"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:gravity="center"
+            p1:id="@+id/txtSpecialThanksTitle" />
+        <TextView
+            p1:text=""
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:gravity="center"
+            p1:id="@+id/txtSpecialThanksText" />
+    </LinearLayout>
+</ScrollView>

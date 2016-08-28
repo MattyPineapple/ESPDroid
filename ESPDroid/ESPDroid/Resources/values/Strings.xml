@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">ESPDroid</string>
+    <string name="IntroOne">Welcome to ESPDroid! Enter your IP address and Port for your Arduino.</string>
+    <string name="IntroTwo">Head on over to the Sensors tab to start viewing your data or move to the relay tabs to start turning on or off some relays! If you need some help getting started, head over to the info tab for more information.</string>
+    <string name="about">ESPDroid is an Android app designed to talk to an Arduino through WiFi. Just enter the Ardunios IP and Port.</string>
+    <string name="help">This app is implistic in design and only requires a few inputs to use. Enter your IP and Port to connect and then head to the Sensor or Relay tab to start viewing data and toggling relays. For more information, check out the diagram below.</string>
+    <string name="credits">Designed and developed by Matthew Maitland.</string>
+    <string name="specialThanks">Special thanks to Max Ellignhausen, Harris Youngson, Sam Shirtcliffe and Nathan Pierson for help and critical feedback.</string>
 </resources>

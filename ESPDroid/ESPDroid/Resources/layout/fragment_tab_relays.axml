@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout1">
+        <Switch
+            p1:text="Relay 1"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/switch1"
+            p1:textOn="ON"
+            p1:textOff="OFF"
+            p1:layout_marginTop="15dp"
+            p1:layout_marginBottom="15dp"
+            p1:layout_marginLeft="6.0dp"
+            p1:layout_marginRight="6.0dp" />
+        <Switch
+            p1:text="Relay 2"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/switch2"
+            p1:textOn="ON"
+            p1:textOff="OFF"
+            p1:layout_marginTop="15dp"
+            p1:layout_marginBottom="15dp"
+            p1:layout_marginLeft="6.0dp"
+            p1:layout_marginRight="6.0dp" />
+        <Switch
+            p1:text="Relay 3"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/switch3"
+            p1:textOn="ON"
+            p1:textOff="OFF"
+            p1:layout_marginTop="15dp"
+            p1:layout_marginBottom="15dp"
+            p1:layout_marginLeft="6.0dp"
+            p1:layout_marginRight="6.0dp" />
+        <Switch
+            p1:text="Relay 4"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/switch4"
+            p1:textOn="ON"
+            p1:textOff="OFF"
+            p1:layout_marginTop="15dp"
+            p1:layout_marginBottom="15dp"
+            p1:layout_marginLeft="6.0dp"
+            p1:layout_marginRight="6.0dp" />
+        <Switch
+            p1:text="Relay 5"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/switch5"
+            p1:textOn="ON"
+            p1:textOff="OFF"
+            p1:layout_marginTop="15dp"
+            p1:layout_marginBottom="15dp"
+            p1:layout_marginLeft="6.0dp"
+            p1:layout_marginRight="6.0dp" />
+        <Switch
+            p1:text="Relay 6"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/switch6"
+            p1:textOn="ON"
+            p1:textOff="OFF"
+            p1:layout_marginTop="15dp"
+            p1:layout_marginBottom="15dp"
+            p1:layout_marginLeft="6.0dp"
+            p1:layout_marginRight="6.0dp" />
+        <Switch
+            p1:text="Relay 7"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/switch7"
+            p1:textOn="ON"
+            p1:textOff="OFF"
+            p1:layout_marginTop="15dp"
+            p1:layout_marginBottom="15dp"
+            p1:layout_marginLeft="6.0dp"
+            p1:layout_marginRight="6.0dp" />
+        <Switch
+            p1:text="Relay 8"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/switch8"
+            p1:textOn="ON"
+            p1:textOff="OFF"
+            p1:layout_marginTop="15dp"
+            p1:layout_marginBottom="15dp"
+            p1:layout_marginLeft="6.0dp"
+            p1:layout_marginRight="6.0dp" />
+    </LinearLayout>
+</ScrollView>

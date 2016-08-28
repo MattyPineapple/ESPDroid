@@ -7,6 +7,7 @@ using Android.App;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ESPDroid")]
+//[assembly: Application(Theme = "@android:style/Theme.DeviceDefualt.Light.NoActionBar")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
