@@ -36,6 +36,11 @@
             p1:layout_height="wrap_content"
             p1:gravity="center"
             p1:id="@+id/txtHelpText" />
+        <!--<ImageView
+            p1:layout_width="fill_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/imgGuide"
+            p1:src="@drawable/Guide" />-->
         <TextView
             p1:text="Credits"
             p1:textAppearance="?android:attr/textAppearanceLarge"

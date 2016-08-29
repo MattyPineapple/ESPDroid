@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using Android.Views.InputMethods;
 
 namespace ESPDroid.Activities
 {
