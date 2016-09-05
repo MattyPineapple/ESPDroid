@@ -19,6 +19,8 @@ namespace ESPDroid.Classes
         public static string htmlURL { get; set; }
         public static string htmlPort { get; set; }
 
+        public static bool needPort { get; set; }
+
         public static string sensor1 { get; set; }
         public static string sensor2 { get; set; }
         public static string sensor3 { get; set; }

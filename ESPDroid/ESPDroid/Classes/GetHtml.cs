@@ -22,7 +22,16 @@ namespace ESPDroid.Classes
         public static string FetchData()
         {
             WebResponse responseStats = null;
-            WebRequest requestStats = WebRequest.Create(HtmlValues.htmlURL + ":" + HtmlValues.htmlPort);
+            WebRequest requestStats = null;
+
+            if (HtmlValues.needPort)
+            {
+                requestStats = WebRequest.Create(HtmlValues.htmlURL + ":" + HtmlValues.htmlPort);
+            }
+            else
+            {
+                requestStats = WebRequest.Create(HtmlValues.htmlURL);
+            }
 
             try { responseStats = requestStats.GetResponse(); }
             catch { return "Error"; }
@@ -71,6 +80,7 @@ namespace ESPDroid.Classes
             }
 
             updateHtmlValues();
+            HtmlValues.htmlValue.Clear();
             return "Success";
         }
 

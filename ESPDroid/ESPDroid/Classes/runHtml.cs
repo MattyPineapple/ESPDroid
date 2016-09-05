@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.Threading;
 
 namespace ESPDroid.Classes
 {
@@ -23,20 +24,8 @@ namespace ESPDroid.Classes
                 loopHtml = true;
                 while (loopHtml)
                 {
-                    try
-                    {
-                        GetHtml.FetchData();
-
-                        //FragmentManager fm = getSupportFragmentManager();
-
-                        ////if you added fragment via layout xml
-                        //YourFragmentClass fragment = (YourFragmentClass)fm.findFragmentById(R.id.your_fragment_id);
-                        //fragment.yourPublicMethod();
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine("Error: {0}", e.Message);
-                    }
+                    GetHtml.FetchData();
+                    Thread.Sleep(5000);
                 }
             }
         }

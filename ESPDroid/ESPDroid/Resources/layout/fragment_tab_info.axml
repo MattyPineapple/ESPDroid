@@ -15,19 +15,25 @@
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/txtAboutTitle" />
+            p1:id="@+id/txtAboutTitle"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp" />
         <TextView
             p1:text=""
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:gravity="center"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
             p1:id="@+id/txtAboutText" />
         <TextView
             p1:text="Help"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
             p1:id="@+id/txtHelpTitle" />
         <TextView
             p1:text=""
@@ -35,8 +41,10 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:gravity="center"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
             p1:id="@+id/txtHelpText" />
-        <!--<ImageView
+    <!--<ImageView
             p1:layout_width="fill_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/imgGuide"
@@ -46,6 +54,8 @@
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
             p1:id="@+id/txtCreditsTitle" />
         <TextView
             p1:text=""
@@ -53,6 +63,8 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:gravity="center"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
             p1:id="@+id/txtCreditsText" />
         <TextView
             p1:text="Special Thanks"
@@ -60,6 +72,8 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:gravity="center"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
             p1:id="@+id/txtSpecialThanksTitle" />
         <TextView
             p1:text=""
@@ -67,6 +81,8 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:gravity="center"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
             p1:id="@+id/txtSpecialThanksText" />
     </LinearLayout>
 </ScrollView>
