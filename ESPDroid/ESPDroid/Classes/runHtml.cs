@@ -39,11 +39,16 @@ namespace ESPDroid.Classes
         {
             var returnStatus = GetHtml.FetchData();
 
-            if (returnStatus == "Success") {
+            if (returnStatus == "Success")
+            {
                 return true;
-            } else if(returnStatus == "Error") {
+            }
+            else if (returnStatus == "Error")
+            {
                 return false;
-            } else {
+            }
+            else
+            {
                 return false;
             }
         }

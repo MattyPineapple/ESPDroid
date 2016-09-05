@@ -33,8 +33,15 @@ namespace ESPDroid.Classes
                 requestStats = WebRequest.Create(HtmlValues.htmlURL);
             }
 
-            try { responseStats = requestStats.GetResponse(); }
-            catch { return "Error"; }
+            //try
+            //{
+                responseStats = requestStats.GetResponse();
+            //}
+            //catch
+            //{
+            //    Console.WriteLine("Error");
+            //    return "Error";
+            //}
 
             StreamReader srResponse = new StreamReader(responseStats.GetResponseStream(), Encoding.UTF8);
             string htmlResponse = srResponse.ReadToEnd();

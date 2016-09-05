@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using System.Threading;
+using ESPDroid.Classes;
 
 namespace ESPDroid
 {
@@ -19,6 +20,10 @@ namespace ESPDroid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            HtmlValues.htmlURL = "http://192.168.0.11/arduino.php";
+            HtmlValues.htmlPort = "80";
+            HtmlValues.needPort = false;
 
             Thread.Sleep(3000);
 

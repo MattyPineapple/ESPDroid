@@ -35,46 +35,42 @@ namespace ESPDroid.Activities
         private TextView s7;
         private TextView s8;
 
+        private int i = 0;
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            clearPlotModel();
-
-            ThreadPool.QueueUserWorkItem(o => runHtml.Start());
-            ThreadPool.QueueUserWorkItem(o => updateValues());
         }
 
         private void updateValues()
         {
-            addPlotModelSeries();
-            addPlotModelSeries();
-            addPlotModelSeries();
-
-            changePlotAppearance(0, OxyColor.FromRgb(255, 0, 0), MarkerType.Circle, 4);
-            changePlotAppearance(1, OxyColor.FromRgb(0, 255, 0), MarkerType.Circle, 4);
-            changePlotAppearance(2, OxyColor.FromRgb(0, 0, 255), MarkerType.Circle, 4);
-
-            int i = 0;
-
-            while (true)
+            Looper.Prepare();
+            while(true)
             {
-                s1.Text = HtmlValues.sensor1;
-                s2.Text = HtmlValues.sensor2;
-                s3.Text = HtmlValues.sensor3;
-                s4.Text = HtmlValues.sensor4;
-                s5.Text = HtmlValues.sensor5;
-                s6.Text = HtmlValues.sensor6;
-                s7.Text = HtmlValues.sensor7;
-                s8.Text = HtmlValues.sensor8;
-
-                updatePlotModel(0, i, Convert.ToDouble(HtmlValues.sensor1));
-                updatePlotModel(1, i, Convert.ToDouble(HtmlValues.sensor2));
-                updatePlotModel(2, i, Convert.ToDouble(HtmlValues.sensor3));
+                TabActivity tab = new TabActivity();
+                tab.RunOnUiThread(() => s1.Text = HtmlValues.sensor1);
 
                 i++;
                 Thread.Sleep(5000);
             }
+        }
+
+        private void foo()
+        {
+            s1.Text = HtmlValues.sensor1;
+            s2.Text = HtmlValues.sensor2;
+            s3.Text = HtmlValues.sensor3;
+            s4.Text = HtmlValues.sensor4;
+            s5.Text = HtmlValues.sensor5;
+            s6.Text = HtmlValues.sensor6;
+            s7.Text = HtmlValues.sensor7;
+            s8.Text = HtmlValues.sensor8;
+
+            updatePlotModel(0, i, Convert.ToDouble(HtmlValues.sensor1));
+            updatePlotModel(1, i, Convert.ToDouble(HtmlValues.sensor2));
+            updatePlotModel(2, i, Convert.ToDouble(HtmlValues.sensor3));
+
+            Console.WriteLine("working");
         }
 
         private PlotModel CreatePlotModel()
@@ -121,13 +117,13 @@ namespace ESPDroid.Activities
             plotView.Model = CreatePlotModel();
 
             s1 = view.FindViewById<TextView>(Resource.Id.txtv1);
-            s2 = view.FindViewById<TextView>(Resource.Id.txtv1);
-            s3 = view.FindViewById<TextView>(Resource.Id.txtv1);
-            s4 = view.FindViewById<TextView>(Resource.Id.txtv1);
-            s5 = view.FindViewById<TextView>(Resource.Id.txtv1);
-            s6 = view.FindViewById<TextView>(Resource.Id.txtv1);
-            s7 = view.FindViewById<TextView>(Resource.Id.txtv1);
-            s8 = view.FindViewById<TextView>(Resource.Id.txtv1);
+            s2 = view.FindViewById<TextView>(Resource.Id.txtv2);
+            s3 = view.FindViewById<TextView>(Resource.Id.txtv3);
+            s4 = view.FindViewById<TextView>(Resource.Id.txtv4);
+            s5 = view.FindViewById<TextView>(Resource.Id.txtv5);
+            s6 = view.FindViewById<TextView>(Resource.Id.txtv6);
+            s7 = view.FindViewById<TextView>(Resource.Id.txtv7);
+            s8 = view.FindViewById<TextView>(Resource.Id.txtv8);
 
             s1.Text = "0";
             s2.Text = "0";
@@ -137,6 +133,17 @@ namespace ESPDroid.Activities
             s6.Text = "0";
             s7.Text = "0";
             s8.Text = "0";
+
+            addPlotModelSeries();
+            addPlotModelSeries();
+            addPlotModelSeries();
+
+            changePlotAppearance(0, OxyColor.FromRgb(255, 0, 0), MarkerType.Circle, 4);
+            changePlotAppearance(1, OxyColor.FromRgb(0, 255, 0), MarkerType.Circle, 4);
+            changePlotAppearance(2, OxyColor.FromRgb(0, 0, 255), MarkerType.Circle, 4);
+
+            ThreadPool.QueueUserWorkItem(o => runHtml.Start());
+            ThreadPool.QueueUserWorkItem(o => updateValues());
 
             return view;
         }
