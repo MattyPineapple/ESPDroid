@@ -54,10 +54,16 @@ namespace ESPDroid.Activities
             return plotModel;
         }
 
-        public void addPlotModelSeries(double x, double y)
+        public void addPlotModelSeries()
         {
             plotModel.Series.Add(new LineSeries());
-            
+        }
+
+        private void changePlotAppearance(int series, OxyColor colour, MarkerType marker, double size)
+        {
+            (plotModel.Series[series] as LineSeries).MarkerType = marker;
+            (plotModel.Series[series] as LineSeries).MarkerSize = size;
+            (plotModel.Series[series] as LineSeries).MarkerStroke = colour;
         }
 
         public void updatePlotModel(double x, double y, int series)
