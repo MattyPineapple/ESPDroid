@@ -182,46 +182,46 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/linearLayout2"
                 p1:gravity="center_horizontal">
-                <RadioButton
+                <CheckBox
                     p1:text="1"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
-                    p1:id="@+id/rdo1" />
-                <RadioButton
+                    p1:id="@+id/chkBx1" />
+                <CheckBox
                     p1:text="2"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
-                    p1:id="@+id/rdo2" />
-                <RadioButton
+                    p1:id="@+id/chkBx2" />
+                <CheckBox
                     p1:text="3"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
-                    p1:id="@+id/rdo3" />
-                <RadioButton
+                    p1:id="@+id/chkBx3" />
+                <CheckBox
                     p1:text="4"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
-                    p1:id="@+id/rdo4" />
-                <RadioButton
+                    p1:id="@+id/chkBx4" />
+                <CheckBox
                     p1:text="5"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
-                    p1:id="@+id/rdo5" />
-                <RadioButton
+                    p1:id="@+id/chkBx5" />
+                <CheckBox
                     p1:text="6"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
-                    p1:id="@+id/rdo6" />
-                <RadioButton
+                    p1:id="@+id/chkBx6" />
+                <CheckBox
                     p1:text="7"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
-                    p1:id="@+id/rdo7" />
-                <RadioButton
+                    p1:id="@+id/chkBx7" />
+                <CheckBox
                     p1:text="8"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
-                    p1:id="@+id/rdo8" />
+                    p1:id="@+id/chkBx8" />
             </LinearLayout>
         </LinearLayout>
         <OxyPlot.Xamarin.Android.PlotView

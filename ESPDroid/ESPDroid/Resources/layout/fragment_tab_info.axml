@@ -50,9 +50,7 @@
             p1:id="@+id/imgGuide"
             p1:src="@drawable/Guide"
             p1:scaleType="fitCenter"
-            p1:adjustViewBounds="true"
-            p1:layout_marginTop="10dp"
-            p1:layout_marginBottom="10dp"/>
+            p1:adjustViewBounds="true" />
         <TextView
             p1:text="Credits"
             p1:textAppearance="?android:attr/textAppearanceLarge"

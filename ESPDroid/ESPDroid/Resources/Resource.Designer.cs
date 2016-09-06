@@ -75,6 +75,30 @@ namespace ESPDroid
 			// aapt resource value: 0x7f060006
 			public const int btnSave = 2131099654;
 			
+			// aapt resource value: 0x7f06002f
+			public const int chkBx1 = 2131099695;
+			
+			// aapt resource value: 0x7f060030
+			public const int chkBx2 = 2131099696;
+			
+			// aapt resource value: 0x7f060031
+			public const int chkBx3 = 2131099697;
+			
+			// aapt resource value: 0x7f060032
+			public const int chkBx4 = 2131099698;
+			
+			// aapt resource value: 0x7f060033
+			public const int chkBx5 = 2131099699;
+			
+			// aapt resource value: 0x7f060034
+			public const int chkBx6 = 2131099700;
+			
+			// aapt resource value: 0x7f060035
+			public const int chkBx7 = 2131099701;
+			
+			// aapt resource value: 0x7f060036
+			public const int chkBx8 = 2131099702;
+			
 			// aapt resource value: 0x7f060038
 			public const int fragmentContainer = 2131099704;
 			
@@ -92,30 +116,6 @@ namespace ESPDroid
 			
 			// aapt resource value: 0x7f060037
 			public const int plotview1 = 2131099703;
-			
-			// aapt resource value: 0x7f06002f
-			public const int rdo1 = 2131099695;
-			
-			// aapt resource value: 0x7f060030
-			public const int rdo2 = 2131099696;
-			
-			// aapt resource value: 0x7f060031
-			public const int rdo3 = 2131099697;
-			
-			// aapt resource value: 0x7f060032
-			public const int rdo4 = 2131099698;
-			
-			// aapt resource value: 0x7f060033
-			public const int rdo5 = 2131099699;
-			
-			// aapt resource value: 0x7f060034
-			public const int rdo6 = 2131099700;
-			
-			// aapt resource value: 0x7f060035
-			public const int rdo7 = 2131099701;
-			
-			// aapt resource value: 0x7f060036
-			public const int rdo8 = 2131099702;
 			
 			// aapt resource value: 0x7f060009
 			public const int scrollView1 = 2131099657;

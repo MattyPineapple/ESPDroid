@@ -35,6 +35,15 @@ namespace ESPDroid.Activities
         private TextView s7;
         private TextView s8;
 
+        private CheckBox c1;
+        private CheckBox c2;
+        private CheckBox c3;
+        private CheckBox c4;
+        private CheckBox c5;
+        private CheckBox c6;
+        private CheckBox c7;
+        private CheckBox c8;
+
         private int i = 0;
 
         public override void OnCreate(Bundle savedInstanceState)
@@ -60,6 +69,11 @@ namespace ESPDroid.Activities
                     updatePlotModel(0, i, Convert.ToDouble(HtmlValues.sensor1));
                     updatePlotModel(1, i, Convert.ToDouble(HtmlValues.sensor2));
                     updatePlotModel(2, i, Convert.ToDouble(HtmlValues.sensor3));
+                    updatePlotModel(3, i, Convert.ToDouble(HtmlValues.sensor4));
+                    updatePlotModel(4, i, Convert.ToDouble(HtmlValues.sensor5));
+                    updatePlotModel(5, i, Convert.ToDouble(HtmlValues.sensor6));
+                    updatePlotModel(6, i, Convert.ToDouble(HtmlValues.sensor7));
+                    updatePlotModel(7, i, Convert.ToDouble(HtmlValues.sensor8));
 
                     Console.WriteLine("working");
                 }, null);
@@ -86,9 +100,12 @@ namespace ESPDroid.Activities
             return plotModel;
         }
 
-        public void addPlotModelSeries()
+        public void addPlotModelSeries(int foo)
         {
-            plotModel.Series.Add(new LineSeries());
+            for(int i = 0; i <= foo; i++)
+            {
+                plotModel.Series.Add(new LineSeries());
+            }
         }
 
         private void changePlotAppearance(int series, OxyColor colour, MarkerType marker, double size)
@@ -120,6 +137,15 @@ namespace ESPDroid.Activities
 
             var view = inflater.Inflate(Resource.Layout.fragment_tab_sensors, container, false);
 
+            c1 = view.FindViewById<CheckBox>(Resource.Id.chkBx1);
+            c2 = view.FindViewById<CheckBox>(Resource.Id.chkBx2);
+            c3 = view.FindViewById<CheckBox>(Resource.Id.chkBx3);
+            c4 = view.FindViewById<CheckBox>(Resource.Id.chkBx4);
+            c5 = view.FindViewById<CheckBox>(Resource.Id.chkBx5);
+            c6 = view.FindViewById<CheckBox>(Resource.Id.chkBx6);
+            c7 = view.FindViewById<CheckBox>(Resource.Id.chkBx7);
+            c8 = view.FindViewById<CheckBox>(Resource.Id.chkBx8);
+
             plotView = view.FindViewById<PlotView>(Resource.Id.plotview1);
             plotView.Model = CreatePlotModel();
 
@@ -141,16 +167,125 @@ namespace ESPDroid.Activities
             s7.Text = "0";
             s8.Text = "0";
 
-            addPlotModelSeries();
-            addPlotModelSeries();
-            addPlotModelSeries();
+            addPlotModelSeries(8);
 
             changePlotAppearance(0, OxyColor.FromRgb(255, 0, 0), MarkerType.Circle, 4);
             changePlotAppearance(1, OxyColor.FromRgb(0, 255, 0), MarkerType.Circle, 4);
-            changePlotAppearance(2, OxyColor.FromRgb(0, 0, 255), MarkerType.Circle, 4);
+            changePlotAppearance(2, OxyColor.FromRgb(0, 255, 255), MarkerType.Circle, 4);
+            changePlotAppearance(3, OxyColor.FromRgb(255, 122, 255), MarkerType.Circle, 4);
+            changePlotAppearance(4, OxyColor.FromRgb(255, 0, 255), MarkerType.Circle, 4);
+            changePlotAppearance(5, OxyColor.FromRgb(255, 255, 0), MarkerType.Circle, 4);
+            changePlotAppearance(6, OxyColor.FromRgb(0, 0, 122), MarkerType.Circle, 4);
+            changePlotAppearance(7, OxyColor.FromRgb(0, 122, 0), MarkerType.Circle, 4);
 
             ThreadPool.QueueUserWorkItem(o => runHtml.Start());
             ThreadPool.QueueUserWorkItem(o => updateValues());
+
+            //
+
+            c1.Click += (sender, args) =>
+            {
+                if((plotModel.Series[0] as LineSeries).IsVisible == false)
+                {
+                    (plotModel.Series[0] as LineSeries).IsVisible = true;
+                }
+                else
+                {
+                    (plotModel.Series[0] as LineSeries).IsVisible = false;
+                }
+                plotModel.InvalidatePlot(true);
+            };
+
+            c2.Click += (sender, args) =>
+            {
+                if ((plotModel.Series[1] as LineSeries).IsVisible == false)
+                {
+                    (plotModel.Series[1] as LineSeries).IsVisible = true;
+                }
+                else
+                {
+                    (plotModel.Series[1] as LineSeries).IsVisible = false;
+                }
+                plotModel.InvalidatePlot(true);
+            };
+
+            c3.Click += (sender, args) =>
+            {
+                if ((plotModel.Series[2] as LineSeries).IsVisible == false)
+                {
+                    (plotModel.Series[2] as LineSeries).IsVisible = true;
+                }
+                else
+                {
+                    (plotModel.Series[2] as LineSeries).IsVisible = false;
+                }
+                plotModel.InvalidatePlot(true);
+            };
+
+            c4.Click += (sender, args) =>
+            {
+                if ((plotModel.Series[3] as LineSeries).IsVisible == false)
+                {
+                    (plotModel.Series[3] as LineSeries).IsVisible = true;
+                }
+                else
+                {
+                    (plotModel.Series[3] as LineSeries).IsVisible = false;
+                }
+                plotModel.InvalidatePlot(true);
+            };
+
+            c5.Click += (sender, args) =>
+            {
+                if ((plotModel.Series[4] as LineSeries).IsVisible == false)
+                {
+                    (plotModel.Series[4] as LineSeries).IsVisible = true;
+                }
+                else
+                {
+                    (plotModel.Series[4] as LineSeries).IsVisible = false;
+                }
+                plotModel.InvalidatePlot(true);
+            };
+
+            c6.Click += (sender, args) =>
+            {
+                if ((plotModel.Series[5] as LineSeries).IsVisible == false)
+                {
+                    (plotModel.Series[5] as LineSeries).IsVisible = true;
+                }
+                else
+                {
+                    (plotModel.Series[5] as LineSeries).IsVisible = false;
+                }
+                plotModel.InvalidatePlot(true);
+            };
+
+            c7.Click += (sender, args) =>
+            {
+                if ((plotModel.Series[6] as LineSeries).IsVisible == false)
+                {
+                    (plotModel.Series[6] as LineSeries).IsVisible = true;
+                }
+                else
+                {
+                    (plotModel.Series[6] as LineSeries).IsVisible = false;
+                }
+                plotModel.InvalidatePlot(true);
+            };
+
+            c8.Click += (sender, args) =>
+            {
+                if ((plotModel.Series[7] as LineSeries).IsVisible == false)
+                {
+                    (plotModel.Series[7] as LineSeries).IsVisible = true;
+                }
+                else
+                {
+                    (plotModel.Series[7] as LineSeries).IsVisible = false;
+                }
+                plotModel.InvalidatePlot(true);
+            };
 
             return view;
         }
