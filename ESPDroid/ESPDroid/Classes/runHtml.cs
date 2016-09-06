@@ -19,14 +19,11 @@ namespace ESPDroid.Classes
 
         public static void Start()
         {
-            if(checkSettings())
+            loopHtml = true;
+            while (loopHtml)
             {
-                loopHtml = true;
-                while (loopHtml)
-                {
-                    GetHtml.FetchData();
-                    Thread.Sleep(5000);
-                }
+                GetHtml.FetchData();
+                Thread.Sleep(5000);
             }
         }
 

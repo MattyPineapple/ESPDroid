@@ -13,7 +13,7 @@
         p1:layout_marginBottom="15dp"
         p1:layout_marginLeft="6.0dp" />
     <TextView
-        p1:text="IP Address:"
+        p1:text="IP Address: (always starts with http://)"
         p1:textAppearance="?android:attr/textAppearanceSmall"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
@@ -22,9 +22,10 @@
     <EditText
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/txtIP" />
+        p1:id="@+id/txtIP"
+        p1:layout_marginLeft="10dp" />
     <TextView
-        p1:text="Port:"
+        p1:text="Port: (leave blank if not needed)"
         p1:textAppearance="?android:attr/textAppearanceSmall"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
@@ -33,7 +34,8 @@
     <EditText
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/txtPort" />
+        p1:id="@+id/txtPort"
+        p1:layout_marginLeft="10dp" />
     <Button
         p1:text="Save"
         p1:layout_width="125.0dp"
@@ -47,11 +49,11 @@
         p1:layout_height="wrap_content"
         p1:id="@+id/txtIntroTwo"
         p1:layout_marginBottom="392.5dp"
-        p1:layout_marginLeft="6.0dp" />
+        p1:layout_marginLeft="10dp" />
     <ImageView
         p1:layout_width="fill_parent"
         p1:layout_height="fill_parent"
         p1:id="@+id/ImageView1"
         p1:src="@drawable/homeImage2"
-        p1:scaleType="fitCenter" />
+        p1:adjustViewBounds="true" />
 </LinearLayout>

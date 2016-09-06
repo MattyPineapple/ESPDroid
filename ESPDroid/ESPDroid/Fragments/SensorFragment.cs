@@ -47,40 +47,41 @@ namespace ESPDroid.Activities
             Looper.Prepare();
             while(true)
             {
-                TabActivity tab = new TabActivity();
-                tab.RunOnUiThread(() => s1.Text = HtmlValues.sensor1);
+                Application.SynchronizationContext.Post(_ => {
+                    s1.Text = HtmlValues.sensor1;
+                    s2.Text = HtmlValues.sensor2;
+                    s3.Text = HtmlValues.sensor3;
+                    s4.Text = HtmlValues.sensor4;
+                    s5.Text = HtmlValues.sensor5;
+                    s6.Text = HtmlValues.sensor6;
+                    s7.Text = HtmlValues.sensor7;
+                    s8.Text = HtmlValues.sensor8;
 
-                i++;
+                    updatePlotModel(0, i, Convert.ToDouble(HtmlValues.sensor1));
+                    updatePlotModel(1, i, Convert.ToDouble(HtmlValues.sensor2));
+                    updatePlotModel(2, i, Convert.ToDouble(HtmlValues.sensor3));
+
+                    Console.WriteLine("working");
+                }, null);
+
+                if(i >= 50)
+                {
+                    i = 0;
+                }
+                else
+                {
+                    i++;
+                }
                 Thread.Sleep(5000);
             }
-        }
-
-        private void foo()
-        {
-            s1.Text = HtmlValues.sensor1;
-            s2.Text = HtmlValues.sensor2;
-            s3.Text = HtmlValues.sensor3;
-            s4.Text = HtmlValues.sensor4;
-            s5.Text = HtmlValues.sensor5;
-            s6.Text = HtmlValues.sensor6;
-            s7.Text = HtmlValues.sensor7;
-            s8.Text = HtmlValues.sensor8;
-
-            updatePlotModel(0, i, Convert.ToDouble(HtmlValues.sensor1));
-            updatePlotModel(1, i, Convert.ToDouble(HtmlValues.sensor2));
-            updatePlotModel(2, i, Convert.ToDouble(HtmlValues.sensor3));
-
-            Console.WriteLine("working");
         }
 
         private PlotModel CreatePlotModel()
         {
             plotModel = new PlotModel { Title = "Graph" };
 
-            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, Maximum = 20, Minimum = 0 });
-            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Maximum = 10, Minimum = 0 });
-
-            plotModel.Series.Add(new LineSeries());
+            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, Maximum = 50, Minimum = 0, Title = "Time" });
+            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Maximum = 100, Minimum = 0, Title = "Temp" });
 
             return plotModel;
         }
@@ -99,7 +100,13 @@ namespace ESPDroid.Activities
 
         public void updatePlotModel(int series, double x, double y)
         {
+            if ((plotModel.Series[series] as LineSeries).Points.Count > 40)
+            {
+                (plotModel.Series[series] as LineSeries).Points.RemoveAt(0);
+            }
+
             (plotModel.Series[series] as LineSeries).Points.Add(new DataPoint(x, y));
+            plotModel.InvalidatePlot(true);
         }
 
         public void clearPlotModel()

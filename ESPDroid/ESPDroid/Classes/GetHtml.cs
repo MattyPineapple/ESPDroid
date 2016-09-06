@@ -24,24 +24,24 @@ namespace ESPDroid.Classes
             WebResponse responseStats = null;
             WebRequest requestStats = null;
 
-            if (HtmlValues.needPort)
+            try
             {
-                requestStats = WebRequest.Create(HtmlValues.htmlURL + ":" + HtmlValues.htmlPort);
-            }
-            else
-            {
-                requestStats = WebRequest.Create(HtmlValues.htmlURL);
-            }
+                if (HtmlValues.needPort)
+                {
+                    requestStats = WebRequest.Create(HtmlValues.htmlURL + ":" + HtmlValues.htmlPort);
+                }
+                else
+                {
+                    requestStats = WebRequest.Create(HtmlValues.htmlURL);
+                }
 
-            //try
-            //{
                 responseStats = requestStats.GetResponse();
-            //}
-            //catch
-            //{
-            //    Console.WriteLine("Error");
-            //    return "Error";
-            //}
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return "Error";
+            }
 
             StreamReader srResponse = new StreamReader(responseStats.GetResponseStream(), Encoding.UTF8);
             string htmlResponse = srResponse.ReadToEnd();

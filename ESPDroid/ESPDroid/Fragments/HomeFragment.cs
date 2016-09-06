@@ -12,6 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Views.InputMethods;
 using ESPDroid.Classes;
+using System.Text.RegularExpressions;
 
 namespace ESPDroid.Activities
 {
@@ -24,11 +25,6 @@ namespace ESPDroid.Activities
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            //btnSave.Click += delegate {
-            //    HtmlValues.htmlURL = url.ToString();
-            //    HtmlValues.htmlPort = port.ToString();
-            //};
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -47,6 +43,52 @@ namespace ESPDroid.Activities
 
             introOne.Text = GetString(Resource.String.IntroOne);
             introTwo.Text = GetString(Resource.String.IntroTwo);
+
+            btnSave.Click += (sender, args) =>
+            {
+                string pattern = @"^(http|https|ftp|)\://|[a-zA-Z0-9\-\.]+\.[a-zA-Z](:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;%\$#\=~])*[^\.\,\)\(\s]$";
+                Regex reg = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+                string uri = url.Text.ToString();
+                string prt = port.Text.ToString();
+
+                if(reg.IsMatch(uri))
+                {
+                    int n;
+                    HtmlValues.htmlURL = url.Text.ToString();
+
+                    if(prt == null)
+                    {
+                        HtmlValues.needPort = false;
+
+                        if (int.TryParse(prt, out n))
+                        {
+                            HtmlValues.htmlPort = port.Text.ToString();
+                            Toast.MakeText(this.Activity, "Saved", ToastLength.Short).Show();
+                        }
+                        else
+                        {
+                            Toast.MakeText(this.Activity, "Failed, incorrect input!", ToastLength.Short).Show();
+                        }
+                    }
+                    else
+                    {
+                        if (int.TryParse(prt, out n))
+                        {
+                            HtmlValues.htmlPort = port.Text.ToString();
+                            Toast.MakeText(this.Activity, "Saved", ToastLength.Short).Show();
+                        }
+                        else
+                        {
+                            Toast.MakeText(this.Activity, "Failed, incorrect input!", ToastLength.Short).Show();
+                        }
+                    }
+                }
+                else
+                {
+                    Toast.MakeText(this.Activity, "Failed, incorrect input!", ToastLength.Short).Show();
+                }             
+            };
 
             return view;
         }

@@ -21,10 +21,6 @@ namespace ESPDroid
         {
             base.OnCreate(savedInstanceState);
 
-            HtmlValues.htmlURL = "http://192.168.0.11/arduino.php";
-            HtmlValues.htmlPort = "80";
-            HtmlValues.needPort = false;
-
             Thread.Sleep(3000);
 
             StartActivity(typeof(TabActivity));
