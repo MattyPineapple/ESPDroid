@@ -75,80 +75,77 @@ namespace ESPDroid
 			// aapt resource value: 0x7f060006
 			public const int btnSave = 2131099654;
 			
+			// aapt resource value: 0x7f06002e
+			public const int chkBx1 = 2131099694;
+			
 			// aapt resource value: 0x7f06002f
-			public const int chkBx1 = 2131099695;
+			public const int chkBx2 = 2131099695;
 			
 			// aapt resource value: 0x7f060030
-			public const int chkBx2 = 2131099696;
+			public const int chkBx3 = 2131099696;
 			
 			// aapt resource value: 0x7f060031
-			public const int chkBx3 = 2131099697;
+			public const int chkBx4 = 2131099697;
 			
 			// aapt resource value: 0x7f060032
-			public const int chkBx4 = 2131099698;
+			public const int chkBx5 = 2131099698;
 			
 			// aapt resource value: 0x7f060033
-			public const int chkBx5 = 2131099699;
+			public const int chkBx6 = 2131099699;
 			
 			// aapt resource value: 0x7f060034
-			public const int chkBx6 = 2131099700;
+			public const int chkBx7 = 2131099700;
 			
 			// aapt resource value: 0x7f060035
-			public const int chkBx7 = 2131099701;
+			public const int chkBx8 = 2131099701;
 			
-			// aapt resource value: 0x7f060036
-			public const int chkBx8 = 2131099702;
-			
-			// aapt resource value: 0x7f060038
-			public const int fragmentContainer = 2131099704;
-			
-			// aapt resource value: 0x7f06000e
-			public const int imgGuide = 2131099662;
+			// aapt resource value: 0x7f060037
+			public const int fragmentContainer = 2131099703;
 			
 			// aapt resource value: 0x7f060000
 			public const int linearLayout1 = 2131099648;
 			
-			// aapt resource value: 0x7f06002e
-			public const int linearLayout2 = 2131099694;
+			// aapt resource value: 0x7f06002d
+			public const int linearLayout2 = 2131099693;
 			
-			// aapt resource value: 0x7f06001b
-			public const int linearLayoutModel = 2131099675;
+			// aapt resource value: 0x7f06001a
+			public const int linearLayoutModel = 2131099674;
 			
-			// aapt resource value: 0x7f060037
-			public const int plotview1 = 2131099703;
+			// aapt resource value: 0x7f060036
+			public const int plotview1 = 2131099702;
 			
 			// aapt resource value: 0x7f060009
 			public const int scrollView1 = 2131099657;
 			
+			// aapt resource value: 0x7f060012
+			public const int switch1 = 2131099666;
+			
 			// aapt resource value: 0x7f060013
-			public const int switch1 = 2131099667;
+			public const int switch2 = 2131099667;
 			
 			// aapt resource value: 0x7f060014
-			public const int switch2 = 2131099668;
+			public const int switch3 = 2131099668;
 			
 			// aapt resource value: 0x7f060015
-			public const int switch3 = 2131099669;
+			public const int switch4 = 2131099669;
 			
 			// aapt resource value: 0x7f060016
-			public const int switch4 = 2131099670;
+			public const int switch5 = 2131099670;
 			
 			// aapt resource value: 0x7f060017
-			public const int switch5 = 2131099671;
+			public const int switch6 = 2131099671;
 			
 			// aapt resource value: 0x7f060018
-			public const int switch6 = 2131099672;
+			public const int switch7 = 2131099672;
 			
 			// aapt resource value: 0x7f060019
-			public const int switch7 = 2131099673;
+			public const int switch8 = 2131099673;
 			
-			// aapt resource value: 0x7f06001a
-			public const int switch8 = 2131099674;
+			// aapt resource value: 0x7f06001b
+			public const int textView1 = 2131099675;
 			
-			// aapt resource value: 0x7f06001c
-			public const int textView1 = 2131099676;
-			
-			// aapt resource value: 0x7f06002d
-			public const int textView2 = 2131099693;
+			// aapt resource value: 0x7f06002c
+			public const int textView2 = 2131099692;
 			
 			// aapt resource value: 0x7f06000b
 			public const int txtAboutText = 2131099659;
@@ -156,11 +153,11 @@ namespace ESPDroid
 			// aapt resource value: 0x7f06000a
 			public const int txtAboutTitle = 2131099658;
 			
-			// aapt resource value: 0x7f060010
-			public const int txtCreditsText = 2131099664;
-			
 			// aapt resource value: 0x7f06000f
-			public const int txtCreditsTitle = 2131099663;
+			public const int txtCreditsText = 2131099663;
+			
+			// aapt resource value: 0x7f06000e
+			public const int txtCreditsTitle = 2131099662;
 			
 			// aapt resource value: 0x7f06000d
 			public const int txtHelpText = 2131099661;
@@ -186,59 +183,59 @@ namespace ESPDroid
 			// aapt resource value: 0x7f060004
 			public const int txtPortText = 2131099652;
 			
-			// aapt resource value: 0x7f060012
-			public const int txtSpecialThanksText = 2131099666;
-			
 			// aapt resource value: 0x7f060011
-			public const int txtSpecialThanksTitle = 2131099665;
+			public const int txtSpecialThanksText = 2131099665;
 			
-			// aapt resource value: 0x7f06001d
-			public const int txts1 = 2131099677;
+			// aapt resource value: 0x7f060010
+			public const int txtSpecialThanksTitle = 2131099664;
 			
-			// aapt resource value: 0x7f06001f
-			public const int txts2 = 2131099679;
-			
-			// aapt resource value: 0x7f060021
-			public const int txts3 = 2131099681;
-			
-			// aapt resource value: 0x7f060023
-			public const int txts4 = 2131099683;
-			
-			// aapt resource value: 0x7f060025
-			public const int txts5 = 2131099685;
-			
-			// aapt resource value: 0x7f060027
-			public const int txts6 = 2131099687;
-			
-			// aapt resource value: 0x7f060029
-			public const int txts7 = 2131099689;
-			
-			// aapt resource value: 0x7f06002b
-			public const int txts8 = 2131099691;
+			// aapt resource value: 0x7f06001c
+			public const int txts1 = 2131099676;
 			
 			// aapt resource value: 0x7f06001e
-			public const int txtv1 = 2131099678;
+			public const int txts2 = 2131099678;
 			
 			// aapt resource value: 0x7f060020
-			public const int txtv2 = 2131099680;
+			public const int txts3 = 2131099680;
 			
 			// aapt resource value: 0x7f060022
-			public const int txtv3 = 2131099682;
+			public const int txts4 = 2131099682;
 			
 			// aapt resource value: 0x7f060024
-			public const int txtv4 = 2131099684;
+			public const int txts5 = 2131099684;
 			
 			// aapt resource value: 0x7f060026
-			public const int txtv5 = 2131099686;
+			public const int txts6 = 2131099686;
 			
 			// aapt resource value: 0x7f060028
-			public const int txtv6 = 2131099688;
+			public const int txts7 = 2131099688;
 			
 			// aapt resource value: 0x7f06002a
-			public const int txtv7 = 2131099690;
+			public const int txts8 = 2131099690;
 			
-			// aapt resource value: 0x7f06002c
-			public const int txtv8 = 2131099692;
+			// aapt resource value: 0x7f06001d
+			public const int txtv1 = 2131099677;
+			
+			// aapt resource value: 0x7f06001f
+			public const int txtv2 = 2131099679;
+			
+			// aapt resource value: 0x7f060021
+			public const int txtv3 = 2131099681;
+			
+			// aapt resource value: 0x7f060023
+			public const int txtv4 = 2131099683;
+			
+			// aapt resource value: 0x7f060025
+			public const int txtv5 = 2131099685;
+			
+			// aapt resource value: 0x7f060027
+			public const int txtv6 = 2131099687;
+			
+			// aapt resource value: 0x7f060029
+			public const int txtv7 = 2131099689;
+			
+			// aapt resource value: 0x7f06002b
+			public const int txtv8 = 2131099691;
 			
 			static Id()
 			{

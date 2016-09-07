@@ -52,42 +52,39 @@ namespace ESPDroid.Activities
                 string uri = url.Text.ToString();
                 string prt = port.Text.ToString();
 
-                if(reg.IsMatch(uri))
-                {
-                    int n;
-                    HtmlValues.htmlURL = url.Text.ToString();
+                HtmlValues.needPort = false;
+                HtmlValues.htmlURL = url.Text.ToString();
+                Toast.MakeText(this.Activity, "Saved", ToastLength.Short).Show();
 
-                    if(prt == null)
-                    {
-                        HtmlValues.needPort = false;
+                ////if(reg.IsMatch(uri))
+                //if (true)
+                //{
+                //    int n;
+                //    HtmlValues.htmlURL = url.Text.ToString();
+                //    Toast.MakeText(this.Activity, "Saved", ToastLength.Short).Show();
 
-                        if (int.TryParse(prt, out n))
-                        {
-                            HtmlValues.htmlPort = port.Text.ToString();
-                            Toast.MakeText(this.Activity, "Saved", ToastLength.Short).Show();
-                        }
-                        else
-                        {
-                            Toast.MakeText(this.Activity, "Failed, incorrect input!", ToastLength.Short).Show();
-                        }
-                    }
-                    else
-                    {
-                        if (int.TryParse(prt, out n))
-                        {
-                            HtmlValues.htmlPort = port.Text.ToString();
-                            Toast.MakeText(this.Activity, "Saved", ToastLength.Short).Show();
-                        }
-                        else
-                        {
-                            Toast.MakeText(this.Activity, "Failed, incorrect input!", ToastLength.Short).Show();
-                        }
-                    }
-                }
-                else
-                {
-                    Toast.MakeText(this.Activity, "Failed, incorrect input!", ToastLength.Short).Show();
-                }             
+                //    //if (prt == null)
+                //    //{
+                //    //    HtmlValues.needPort = false;
+                //    //    Toast.MakeText(this.Activity, "Saved", ToastLength.Short).Show();
+                //    //}
+                //    //else
+                //    //{
+                //    //    if (int.TryParse(prt, out n))
+                //    //    {
+                //    //        HtmlValues.htmlPort = port.Text.ToString();
+                //    //        Toast.MakeText(this.Activity, "Saved", ToastLength.Short).Show();
+                //    //    }
+                //    //    else
+                //    //    {
+                //    //        Toast.MakeText(this.Activity, "Failed, incorrect input!", ToastLength.Short).Show();
+                //    //    }
+                //    //}
+                //}
+                //else
+                //{
+                //    Toast.MakeText(this.Activity, "Failed, incorrect input!", ToastLength.Short).Show();
+                //}             
             };
 
             return view;

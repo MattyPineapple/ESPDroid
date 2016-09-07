@@ -24,8 +24,6 @@ namespace ESPDroid
             Thread.Sleep(3000);
 
             StartActivity(typeof(TabActivity));
-
-            
         }
     }
 }

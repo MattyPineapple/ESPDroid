@@ -49,6 +49,8 @@ namespace ESPDroid.Activities
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            i = 0;
         }
 
         private void updateValues()
@@ -78,7 +80,7 @@ namespace ESPDroid.Activities
                     Console.WriteLine("working");
                 }, null);
 
-                if(i >= 50)
+                if(i >= 10)
                 {
                     i = 0;
                 }
@@ -94,7 +96,7 @@ namespace ESPDroid.Activities
         {
             plotModel = new PlotModel { Title = "Graph" };
 
-            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, Maximum = 50, Minimum = 0, Title = "Time" });
+            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, Maximum = 10, Minimum = 0, Title = "Time" });
             plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Maximum = 100, Minimum = 0, Title = "Temp" });
 
             return plotModel;
@@ -117,7 +119,7 @@ namespace ESPDroid.Activities
 
         public void updatePlotModel(int series, double x, double y)
         {
-            if ((plotModel.Series[series] as LineSeries).Points.Count > 40)
+            if ((plotModel.Series[series] as LineSeries).Points.Count > 8)
             {
                 (plotModel.Series[series] as LineSeries).Points.RemoveAt(0);
             }

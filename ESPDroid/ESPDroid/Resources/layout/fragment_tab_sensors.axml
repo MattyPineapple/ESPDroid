@@ -26,15 +26,16 @@
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/textView1"
-                p1:layout_marginBottom="8dp"
+                p1:layout_marginBottom="2dp"
                 p1:layout_marginTop="8.0dp"
-                p1:layout_marginLeft="6.0dp" />
+                p1:layout_marginLeft="10.0dp"
+                p1:layout_marginRight="10.0dp" />
             <TableLayout
                 p1:layout_width="match_parent"
                 p1:layout_height="match_parent"
-                p1:layout_marginTop="10dp">
+                p1:layout_marginTop="4dp">
                 <TableRow
-                    p1:padding="5dp">
+                    p1:padding="2dp">
                     <TextView
                         p1:layout_width="wrap_content"
                         p1:layout_height="wrap_content"
@@ -47,7 +48,7 @@
                         p1:text="Value" />
                 </TableRow>
                 <TableRow
-                    p1:padding="5dp">
+                    p1:padding="2dp">
                     <TextView
                         p1:layout_width="wrap_content"
                         p1:layout_height="wrap_content"
@@ -62,7 +63,7 @@
                         p1:id="@+id/txtv1" />
                 </TableRow>
                 <TableRow
-                    p1:padding="5dp">
+                    p1:padding="2dp">
                     <TextView
                         p1:layout_width="wrap_content"
                         p1:layout_height="wrap_content"
@@ -77,7 +78,7 @@
                         p1:id="@+id/txtv2" />
                 </TableRow>
                 <TableRow
-                    p1:padding="5dp">
+                    p1:padding="2dp">
                     <TextView
                         p1:layout_width="wrap_content"
                         p1:layout_height="wrap_content"
@@ -92,7 +93,7 @@
                         p1:id="@+id/txtv3" />
                 </TableRow>
                 <TableRow
-                    p1:padding="5dp">
+                    p1:padding="2dp">
                     <TextView
                         p1:layout_width="wrap_content"
                         p1:layout_height="wrap_content"
@@ -107,7 +108,7 @@
                         p1:id="@+id/txtv4" />
                 </TableRow>
                 <TableRow
-                    p1:padding="5dp">
+                    p1:padding="2dp">
                     <TextView
                         p1:layout_width="wrap_content"
                         p1:layout_height="wrap_content"
@@ -122,7 +123,7 @@
                         p1:id="@+id/txtv5" />
                 </TableRow>
                 <TableRow
-                    p1:padding="5dp">
+                    p1:padding="2dp">
                     <TextView
                         p1:layout_width="wrap_content"
                         p1:layout_height="wrap_content"
@@ -137,7 +138,7 @@
                         p1:id="@+id/txtv6" />
                 </TableRow>
                 <TableRow
-                    p1:padding="5dp">
+                    p1:padding="2dp">
                     <TextView
                         p1:layout_width="wrap_content"
                         p1:layout_height="wrap_content"
@@ -152,7 +153,7 @@
                         p1:id="@+id/txtv7" />
                 </TableRow>
                 <TableRow
-                    p1:padding="5dp">
+                    p1:padding="2dp">
                     <TextView
                         p1:layout_width="wrap_content"
                         p1:layout_height="wrap_content"
@@ -173,9 +174,10 @@
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/textView2"
-                p1:layout_marginBottom="8dp"
-                p1:layout_marginTop="8dp"
-                p1:layout_marginLeft="6dp" />
+                p1:layout_marginBottom="4dp"
+                p1:layout_marginTop="4dp"
+                p1:layout_marginLeft="10.0dp"
+                p1:layout_marginRight="10.0dp" />
             <LinearLayout
                 p1:orientation="horizontal"
                 p1:layout_width="match_parent"
@@ -186,41 +188,49 @@
                     p1:text="1"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
+                    p1:checked="true"
                     p1:id="@+id/chkBx1" />
                 <CheckBox
                     p1:text="2"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
+                    p1:checked="true"
                     p1:id="@+id/chkBx2" />
                 <CheckBox
                     p1:text="3"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
+                    p1:checked="true"
                     p1:id="@+id/chkBx3" />
                 <CheckBox
                     p1:text="4"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
+                    p1:checked="true"
                     p1:id="@+id/chkBx4" />
                 <CheckBox
                     p1:text="5"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
+                    p1:checked="true"
                     p1:id="@+id/chkBx5" />
                 <CheckBox
                     p1:text="6"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
+                    p1:checked="true"
                     p1:id="@+id/chkBx6" />
                 <CheckBox
                     p1:text="7"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
+                    p1:checked="true"
                     p1:id="@+id/chkBx7" />
                 <CheckBox
                     p1:text="8"
                     p1:layout_width="wrap_content"
                     p1:layout_height="match_parent"
+                    p1:checked="true"
                     p1:id="@+id/chkBx8" />
             </LinearLayout>
         </LinearLayout>
